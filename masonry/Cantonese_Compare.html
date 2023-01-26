@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="黄键婷 D22090104102">
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./chat.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <title>Cantonese Compare</title>
+    <style>
+        .body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial;
+        }
+
+        /* Style tab links */
+        .tablink {
+        background-color: white;
+        color: black;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 25px;
+        width: 20%;
+        }
+
+        .tablink:hover {
+        background-color: rgb(162, 55, 55);
+        }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+        color: rgb(201, 25, 25);
+        display: none;
+        padding: 350px 20px;
+        height: 100%;
+        }
+
+        #Home {background-color: rgb(255, 255, 255);}
+        #News {background-color: rgb(255, 255, 255);}
+        #Contact {background-color: white;}
+        #About {background-color: white;}
+    </style>
+</head>
+<body>
+    <button class="tablink" id="talecontent">
+        <a href="./yueyufangyanfenzhi.html" style="text-decoration-line: none;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="color: black;" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                <path class="one" fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                <path class="two" fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+        </a>
+        <a href="#"></a>
+    </button>
+    <button class="tablink" onclick="openPage('News', this, 'white')" id="defaultOpen">旧金山（三藩市）</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'blue') ">馬來西亞</button>
+    <button class="tablink" onclick="openPage('About', this, 'orange')">越南粵語</button>
+    <button class="tablink">
+        <a href="../粤语文化网页设计 1/网页.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="color: black;" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+                <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+        </a>
+    </button> 
+    
+    
+        <div id="News" class="tabcontent col-12" style="background-image: url('https://images.pexels.com/photos/1141853/pexels-photo-1141853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover;">
+            <div class="row justify-content-end">
+                <div class="col-sm-6 col-lg-4" style="position: relative; top: 0px;">
+                    <h1 class="shadow text-md-center text-bg-dark" style="letter-spacing: 4px; font-size: 40px;">旧金山（三藩市）</h1>
+                    <div class=" py-5 shadow text-white overflow-auto text-bg-dark">
+                        <p style="letter-spacing: 4px; font-size: 20px; padding-left: 20px; padding-right: 20px;">
+                            <b>
+                                “旧金山”英文名是San Francisco，直译为圣弗朗西斯科。 “旧金山”、“三藩市”都是广东人在清末移民过去才起的名字
+                                那个时候很流行挖掘金子，有传闻说美国西部有金子，于是大家便坐船横渡太平洋。这也是“旧金山”名称的起源。
+                            </b>
+                        </p>
+                        <p style="letter-spacing: 4px; font-size: 20px; padding: 0px 20px 0px 20px;">
+                            <b>
+                                这是全美国最会讲粤语的地方
+                                所以在旧金山听到粤语的几率是最大的。
+                                根据1986年的一项调查，旧金山有70%的华人家庭都讲广东话.
+                                因为旧金山99%都是广东人或者香港人.
+                                不过时代在发展，随着移民群体变化，粤语的地位下降了，没有最开始普及了。
+                            </b>
+                        </p>
+                    </div>
+                    <div class="col-md-8 justify-content-center offset-2 text-md-center shadow py-md-3">
+                        <b> <a href="https://www.bilibili.com/video/BV1YW411J7F6/?spm_id_from=333.337.search-card.all.click" style="text-decoration-line: none; color: white; letter-spacing: 4px; font-size: 20px;">
+                            了解更多
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                                    </svg>
+                            </a>
+                         </b>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    <div id="Contact" class="tabcontent" style="background-image: url('https://images.unsplash.com/photo-1566914447826-bf04e54bf1be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2062&q=80'); background-size: cover;">
+        <div class="row justify-content-center">
+            <div class="col-sm-6 col-lg-4">
+                <h1 class=" shadow text-md-center text-white" style="letter-spacing: 3px; font-size: 40px;">马来西亚粤语</h1>
+                <div class="py-5 shadow text-white overflow-auto">
+                    <p style="letter-spacing: 3px; font-size: 20px; letter-spacing: 3px; padding: 0px 20px 0px 20px;">
+                        马来西亚粤语都受到当地的马来语、 华语、英语，甚至是其他汉语方言等的用辞有所影响。
+                    </p>
+                    例如，“甘榜”、“摩多”等。<br>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 justify-content-center offset-2">
+            <p style="color: white; padding: 0px 20px 0px 20px;" class="text-md-center shadow-lg">马来西亚粤语也借用了许多的马来语词汇，使得马来西亚粤语与港澳地区和中国大陆地区的粤语有些不同</p>
+            <div class="card">
+                <table class="table table-bordered text-md-center">
+                    <thead>
+                        <tr>
+                            <th>马來粵語</th>
+                            <th>中文</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>过哔（借字）</td>
+                            <td>咖啡</td>
+                        </tr>
+                        <tr>
+                            <td>裸啲（借字）</td>
+                            <td>包</td>
+                        </tr>
+                        <tr>
+                            <td>巴刹</td>
+                            <td>菜市场</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-md-8 justify-content-center offset-2 text-md-center shadow py-md-3">
+            <b><a href="https://zh.m.wikipedia.org/zh-hans/%E9%A6%AC%E4%BE%86%E8%A5%BF%E4%BA%9E%E7%B2%B5%E8%AA%9E" style="text-decoration-line: none; color: white; font-size: 20px; letter-spacing: 4px;" >
+                了解更多
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                        <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                    </svg>
+                </a>
+            </b>
+        </div>
+    </div>
+    
+    <div id="About" class="tabcontent" style="background-image: url('https://images.pexels.com/photos/58597/pexels-photo-58597.jpeg'); background-size: cover;">
+        <div class="row justify-content-md-start">
+            <div class="col-md-6 col-lg-4">
+                <h1 class="shadow text-md-center text-white" style="letter-spacing: 4px; font-size: 40px; font-style: inherit;">越南粵語</h1>
+                <div class=" py-5 shadow text-white overflow-auto" >
+                    <p style="letter-spacing: 4px; font-size: 20px; padding: 0px 20px 0px 20px;"><b>越南白话是粤语在越南的分支方言。</b></p>
+                    <b style="letter-spacing: 4px; font-size: 20px; padding: 0px 20px 0px 20px;">此方言多以广东籍的华人为主要使用者,亦是越南华人五大方言之首。</b><br>
+                    <b style="letter-spacing: 4px; font-size: 20px; padding: 0px 20px 0px 20px;">越南白话分布于越南部分地区。在北部地区、南部胡志明市分布较多。</b><br>
+                    <b style="letter-spacing: 4px; font-size: 20px; padding: 0px 20px 0px 20px;">越南少数民族中的<a href="https://zh.m.wikipedia.org/zh-hans/%E5%B1%B1%E7%94%B1%E6%97%8F" style="color: white;">山由族</a>、艾族以及越南华人多数皆使用越南白话。</b><br>
+                </div>
+                <div class="col-md-4 justify-content-md-start text-md-center shadow py-md-3 offset-3">
+                    <b>
+                        <a href="https://www.youtube.com/embed/XNo_sYCIwDA" style="text-decoration-line: none; color: white; font-size: 20px; letter-spacing: 4px;" >
+                        了解更多
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+                            </svg>
+                        </a>
+                    </b>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script>
+        function openPage(pageName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+
+        // Show the specific tab content
+        document.getElementById(pageName).style.display = "block";
+
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+</html>

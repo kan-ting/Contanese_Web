@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-image:url(网站底图.jpg);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(155, 170, 180);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(228, 233, 237);
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 2.8px;
+  margin-top: 2.6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+  <div class="header">
+  <h1 style=color:#135597;font-size:84px;>Cantonses Culture</h1>
+</div>
+
+<div class="topnav">
+<style>
+    .dropbtn {
+    background-color: #1752b2;
+    color: white;
+    padding: 32px;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+</head>
+<body>
+
+<style>
+    .dropbtn {
+    background-color: #1752b2;
+    color: white;
+    padding: 32px;
+    font-size: 32px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+  </style>
+</head>
+<body>
+        
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #1752b2; 
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .subnav {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .subnav .subnavbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: rgb(155, 170, 180);
+  }
+  
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(155, 170, 180);
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .subnav-content a:hover {
+    background-color: rgb(155, 170, 180);
+    color: black;
+  }
+  
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <div class="navbar">
+    <div class="subnav">
+      <button class="subnavbtn"><p style = "font-size: 20px;"><i class="fa fa-caret-down"><b>粤语地区</b></i></p></button>
+      <div class="subnav-content">
+        <a href="https://www.gangnizhi.com/?bd_vid=7429063051004641899"><p style = "font-size:18px;" ><b>广东</b></p></a>
+      <a href="https://baike.baidu.com/item/%E9%A6%99%E6%B8%AF%E7%B2%A4%E8%AF%AD/15418484?fr=aladdin"><p style = "font-size:18px;" ><b>香港</b></p></a>
+      <a href="https://baike.baidu.com/item/%E6%BE%B3%E9%97%A8%E8%AF%9D/2022832?fromModule=search-result_lemma"><p style = "font-size:18px;" ><b>澳门</b></p></a>
+    </div>
+    </div> 
+    <div class="subnav">
+      <button class="subnavbtn"><p style = "font-size: 20px;"><i class="fa fa-caret-down"><b>港澳新闻</b></i></p></button>
+      <div class="subnav-content">
+        <a href="http://www.hongkongdaily.net/"><p style = "font-size:18px;" ><b>香港</b></p></a>
+        <a href="https://www.modaily.cn/amucsite/web/index.html#/home"><p style = "font-size:18px;" ><b>澳门</b></p></a>
+      </div>
+    </div> 
+    <div class="subnav">
+      <button class="subnavbtn"><p style = "font-size: 20px;"><i class="fa fa-caret-down"><b>粤语广播</b></i></p></button>
+      <div class="subnav-content">
+        <a href="https://www.ximalaya.com/sound/30904225">悬疑</a>
+        <a href="https://www.ximalaya.com/sound/31310926">历史</a>
+        <a href="https://www.ximalaya.com/album/56200048">歌曲</a>
+      </div>
+    </div>
+    <a href="https://www.wjx.cn/vm/Q5umXXM.aspx"><p style = "font-size: 20px;"><i class="fa fa-caret-down"><b>用户调查</b></i></p></a>
+  </div>
+  
+        
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        
+        <h2 style="font-size: 38px;">GuangZhou</h2>
+        <table>
+          <tr>
+          <td><img src="广州塔1.jpg" style="height:380px;width:1080px;background-size:100% 100%;padding-left: 100px"></td>
+          </tr>
+        </table>
+        <p style="font-size:32px;">  粤语，又称广东话、广府话、白话，是一种声调语言，属汉藏语系汉语族汉语方言。是广府民系的母语。在中国南方的广东中西部、广西东南部及香港、澳门和东南亚的部分国家或地区，以及海外华人社区中广泛使用。</p>
+      </div>
+      <div class="card" style="margin-top: 80px;">
+        <h2 style="font-size: 38px;">HongKong and Macau</h2>
+        <table>
+          <tr>
+          <td><img src="港澳.jpg" style="height:380px;width:1080px;background-size:100% 100%;padding-left: 100px"></td>
+          </tr>
+        </table>
+        <p style="font-size:32px;">  粤语主要分布在中国华南的广东省中部和西部、广西东南部、香港特别行政区、澳门特别行政区、海南省个别地区,广东省使用粤语的人口大约有4000万,加上广西粤语使用人数大约为1200万、香港700万、澳门55万。在中国,有1.2亿人以粤语为母语。</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2 style="font-size:42px"; >小调查</h2>
+        <table>
+          <tr>
+          <td><img src="粤语词汇.jpg" style="height:188px;width:320px;background-size:100% 100%"></td>
+          </tr>
+        </table>
+        <div>
+          <p style="font-size:24px;">你会讲粤语吗？</p>
+          <input id='one' checked type="radio" name="all" value="0"><label style="font-size:22px;"for="one" class="singleElection ">熟练掌握</label>
+          <input id='two' type="radio" name="all" value="10"><label style="font-size:22px;" for="two" class="singleElection">会讲一点</label>
+          <input id='three' type="radio" name="all" value="40"><label style="font-size:22px;" for="three" class="singleElection">完全不会</label>
+         </div>
+      </div>
+      
+  <div class="card" style ="border: 20px;margin-top: 50px;">
+    <a href="yueyufangyanfenzhi.html"><h3 style="font-size:24px"; >地区差异</h3></a>
+    <div class="card">
+    <table>
+    <tr>
+    <td> <img src="Canton.jpg" style="height:188px;width:366px;background-size:100% 100%"></td>
+    </tr>
+    </table>
+    </div>
+    
+  <div class="card" style ="border:100px 70px;margin-top: 15px;">
+      <a href="yueyufangyanfenzhi.html"><h3 style="font-size:24px"; >岭南文化</h3></a>
+      <div class="card">
+      <table>
+      <tr>
+      <td> <img src="粤剧.jpg" style="height:188px;width:366px;background-size:100% 100%"></td>
+      </tr>
+      </table>
+      </div>
+    
+    
+   <div class="card" style ="border:100px 70px;margin-top: 15px;">
+        <a href="yueyufangyanfenzhi.html"><h3 style="font-size:24px"; >九声六调</h3></a>
+        <div class="card">
+        <table>
+        <tr>
+        <td> <img src="粤语.jpeg" style="height:188px;width:366px;background-size:100% 100%"></td>
+        </tr>
+        </table>
+        </div>
+      
+    
+  </div>
+  <div class="footer">
+    <p style="color:#1a6aba; font: size 18px;"><b>黄键婷 伍芊睿 林家如 梁辰</b></p>
+    </div>
+
+
+
